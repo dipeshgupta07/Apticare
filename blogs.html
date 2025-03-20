@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apticare - Blogs and News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .blog-post, .news-item {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        .blog-post h3, .news-item h3 {
+            color: #007bff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+        }
+        .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #76e5eb;
+    color: rgb(2, 38, 101);
+    position: relative;
+    box-shadow: 2px 2px 4px #00000060;
+    border-bottom: 1px solid black;
+}
+
+.titlehome{
+    font-weight: 500;
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+   
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+    font-weight: 800;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.profile img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #76e5eb;
+        padding: 30px;
+        border-radius: 5px;
+        gap: 20px;
+        box-shadow: 2px 2px 4px #00000060;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    .banner{
+        padding: 10px;
+    }
+    .minibox2{
+        padding: 10px;
+    }
+    .minibox4 img{
+        display: none;
+    }
+    .minibox3 h1{
+        font-size: 15px;
+    }
+    .minibox3{
+        margin: 0;
+        height: 70px;
+        
+    }
+    .srch{
+        height: 70px;
+        width: 90%;
+        top: -30px;
+    }
+    .homedes{
+        margin-bottom: 50px;
+
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="logo">
+            <!-- Demo Logo -->
+            <img src="assets/logo.jpg" alt="AptiCare Logo">
+            <h1 class="titlehome">AptiCare</h1>
+        </div>
+        
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="#">Diseases</a>
+            <a href="#">Blogs and News</a>
+            <a href="about.html">About Us</a>
+        </div>
+        <div class="profile">
+            <img src="assets/profile.png" alt="">
+        </div>
+
+
+        <!-- Hamburger Icon for Mobile -->
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+
+
+    <main>
+        <section id="blogs">
+            <h2>Blogs</h2>
+            <article class="blog-post">
+                <h3>Health Tips: How to Stay Healthy This Winter</h3>
+                <p>Published on October 1, 2024</p>
+                <p>As the winter season approaches, it's essential to take steps to maintain good health...</p>
+                <a href="#">Read more</a>
+            </article>
+
+            <article class="blog-post">
+                <h3>Understanding Your Appointment: A Step-by-Step Guide</h3>
+                <p>Published on September 15, 2024</p>
+                <p>Booking an appointment can sometimes be confusing. Here’s how to do it easily through Apticare...</p>
+                <a href="#">Read more</a>
+            </article>
+
+            <!-- Add more blog posts as needed -->
+        </section>
+
+        <section id="news">
+            <h2>News</h2>
+            <article class="news-item">
+                <h3>Apticare Launches New Appointment Features!</h3>
+                <p>Published on October 10, 2024</p>
+                <p>We are excited to announce new features that make booking appointments easier than ever...</p>
+                <a href="#">Read more</a>
+            </article>
+
+            <article class="news-item">
+                <h3>Community Health Fair Scheduled for November 2024</h3>
+                <p>Published on October 5, 2024</p>
+                <p>Join us for our annual community health fair where we will provide free health screenings...</p>
+                <a href="#">Read more</a>
+            </article>
+
+            <!-- Add more news items as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Apticare. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

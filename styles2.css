@@ -1,0 +1,432 @@
+body {
+    font-family: "Poppins", system-ui;
+    margin: 0;
+    padding: 0;
+    
+    color: rgb(2, 38, 101);
+
+}
+h1 {
+    
+    margin-bottom: 20px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: #76e5eb;
+    
+    position: relative;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+}
+
+.titlehome{
+    font-weight: 500;
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: rgb(2, 38, 101);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+   
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+    font-weight: 800;
+}
+
+
+.homebox{
+    background-color: #76e5eb;
+    display: flex;
+    
+    justify-content: space-between;
+    
+    
+}
+.minibox1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.minibox4 img{
+    height: 500px;
+    margin-right: 50px;
+}
+.profile img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.minibox2{
+    padding: 80px;
+}
+.hometext{
+    font-weight: 800;
+    font-size: 60px;
+}
+.homedes{
+    color: rgb(58, 117, 220);
+}
+.minibox3{
+    
+    
+   
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.434);
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+}
+.srch{
+    position: relative;
+    top: -50px;
+    background-color: white;
+    box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.434);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+}
+.copyright{
+    background-color: #76e5eb;
+    color: rgb(2, 38, 101);
+    height: 70px;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 2px solid rgb(2, 38, 101);
+}
+.options{
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.434);
+    padding: 10px;
+    border-radius: 150px;
+    height: 190px;
+    margin-bottom: 50px;
+    overflow-x: scroll;
+    overflow-y: visible;
+    border: 2px solid #76e5eb;
+
+}
+.option{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.opt-img img{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    
+}
+.opt-img:hover{
+    box-shadow: 2px 2px 4px #76e5eb;
+
+}
+.opt-img{
+    border: 4px solid rgb(2, 38, 101);
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+}
+.opt-des h2{
+    font-size: 18px;
+}
+
+.hospital-img img{
+    height: 200px;
+}
+.hospital-des h3{
+    color: rgba(2, 38, 101, 0.579);
+    font-size: 10px;
+    margin: 0;
+
+}
+.hospital-des h2{
+    margin: 0;
+    font-size: 20px;
+}
+.hospital-des{
+    display: flex;
+    flex-direction: column;
+    
+}
+.hospitals{
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hospital{
+    padding: 10px;
+    border: 1px solid rgb(2, 38, 101);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    
+    
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #76e5eb;
+        padding: 30px;
+        border-radius: 5px;
+        gap: 20px;
+        box-shadow: 2px 2px 4px #00000060;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    .banner{
+        padding: 10px;
+    }
+    .minibox2{
+        padding: 10px;
+    }
+    .minibox4 img{
+        display: none;
+    }
+    .minibox3 h1{
+        font-size: 15px;
+    }
+    .minibox3{
+        margin: 0;
+        height: 70px;
+        
+    }
+    .srch{
+        height: 70px;
+        width: 90%;
+        top: -30px;
+    }
+    .homedes{
+        margin-bottom: 50px;
+
+    }
+}
+@media (max-width: 768px) {
+    .hometext{
+        font-size: 20px;
+    }
+    .homebox{
+        padding: 10px;
+    }
+    .minibox4 img{
+        height: 240px;
+    }
+    .homedes{
+        font-size: 15px;
+    }
+    .minibox3{
+       
+        
+        font-size: 10px;
+    }
+    .hospital_box{
+        width: 300px;
+        height: 120px;
+       
+        padding: 10px;
+    }
+    .hospital_box img{
+        height: 120px;
+        width: 120px;
+    }
+}
+
+.srch-box{
+    width: 90%;
+    height: 100%;
+    border: 0px;
+}
+svg{
+    height: 50px;
+    width: 50px;
+}
+.srch{
+    height: 50px;
+    align-items: center;
+    padding: 5px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: rgb(2, 38, 101);
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+#reviews, #customer-experience {
+    padding: 2em;
+    margin: 1em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: rgb(2, 38, 101);
+}
+
+.review {
+    background-color: #f1f1f1;
+    padding: 1em;
+    margin: 0.5em 0;
+    border-radius: 5px;
+}
+
+.stars {
+    color: #FFD700;
+    margin-bottom: 0.5em;
+}
+
+.post-review {
+    padding: 2em;
+    margin: 1em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-review textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.post-review input[type="text"], .post-review input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.post-review button {
+    background-color: rgb(2, 38, 101);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-review button:hover {
+    background-color: rgb(1, 30, 81);
+}
+
+.post-review .stars {
+    color: #FFD700;
+    cursor: pointer;
+}
+
+.post-review .stars input {
+    display: none;
+}
+
+.post-review .stars label {
+    font-size: 2em;
+}
+
+.post-review .stars label:hover, .post-review .stars label:hover ~ label,
+.post-review .stars input:checked ~ label {
+    color: #FFD700;
+}
+
+footer {
+    background-color: rgb(2, 38, 101);
+    color: white;
+    text-align: center;
+    padding: 2em;
+    margin-top: 2em;
+}
+
+.social-media-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.social-media-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-nav {
+    margin-top: 1em;
+}
+
+.footer-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}

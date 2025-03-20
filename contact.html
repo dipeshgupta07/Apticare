@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AptiCare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+    <div class="banner">
+        <div class="logo">
+            <!-- Demo Logo -->
+            <img src="assets/logo.jpg" alt="AptiCare Logo">
+            <h1 class="titlehome">AptiCare</h1>
+        </div>
+        
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="#">Diseases</a>
+            <a href="blogs.html">Blogs and News</a>
+            <a href="about.html">About Us</a>
+        </div>
+        <div class="profile">
+            <img src="assets/profile.png" alt="">
+        </div>
+
+
+        <!-- Hamburger Icon for Mobile -->
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="title">Contact Us</h1>
+        <p>Have questions or need assistance? We're here to help! Reach out to us, and we’ll get back to you shortly.</p>
+
+        <div class="contact-form">
+            <form action="contact.php" method="POST">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

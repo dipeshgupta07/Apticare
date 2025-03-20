@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AptiCare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        h1 {
+            
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 20px 0;
+            opacity: 0;
+            animation: fadeInUp 1.5s ease-in-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        .mission,
+        .why-choose,
+        .vision {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            transform: translateY(50px);
+            opacity: 0;
+            animation: slideUp 1.5s ease-in-out forwards;
+        }
+
+        .why-choose {
+            animation-delay: 0.7s;
+        }
+
+        .vision {
+            animation-delay: 0.9s;
+        }
+
+        ul {
+            text-align: left;
+            padding: 0;
+            list-style-type: none;
+            font-size: 1.1rem;
+        }
+
+        ul li {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #f9f9f9;
+            border-left: 5px solid rgb(2, 38, 101);
+        }
+
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .button {
+            background-color: rgb(2, 38, 101);
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            display: inline-block;
+            font-size: 1rem;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+        .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #76e5eb;
+    color: #000;
+    position: relative;
+    box-shadow: 2px 2px 4px #00000060;
+    border-bottom: 1px solid black;
+}
+
+.titlehome{
+    font-weight: 500;
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    z-index: 2;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+   
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+    font-weight: 800;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.profile img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+.title{
+    color: rgb(2, 38, 101);
+    font-size: 2.5rem;
+           
+}
+.hospital-img img{
+    width: 100%;
+
+}
+.hospital-title{
+    color: #014565;
+    text-align: center;
+}
+.about-hospital{
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #76e5eb;
+        padding: 30px;
+        border-radius: 5px;
+        gap: 20px;
+        box-shadow: 2px 2px 4px #00000060;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    .banner{
+        padding: 10px;
+    }
+    .minibox2{
+        padding: 10px;
+    }
+    .minibox4 img{
+        display: none;
+    }
+    .minibox3 h1{
+        font-size: 15px;
+    }
+    .minibox3{
+        margin: 0;
+        height: 70px;
+        
+    }
+    .srch{
+        height: 70px;
+        width: 90%;
+        top: -30px;
+    }
+    .homedes{
+        margin-bottom: 50px;
+
+    }
+}
+form{
+    margin: 10px;
+}
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+
+    </style>
+    <link rel="icon" href="assets/logo.jpg">
+</head>
+
+<body>
+    <div class="banner">
+        <div class="logo">
+            <!-- Demo Logo -->
+            <img src="assets/logo.jpg" alt="AptiCare Logo">
+            <h1 class="titlehome">AptiCare</h1>
+        </div>
+        
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="#">Diseases</a>
+            <a href="blogs.html">Blogs and News</a>
+            <a href="about.html">About Us</a>
+        </div>
+        <div class="profile">
+            <img src="assets/profile.png" alt="">
+        </div>
+
+
+        <!-- Hamburger Icon for Mobile -->
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+    <div class="hospital-page">
+        <div class="hospital-img">
+            <img src="assets/hospital1.jpg" alt="">
+        </div>
+        <div class="hospital-desc">
+            <h1 class="hospital-title">Udyan Hospital</h1>
+            <div class="about-hospital">
+                <h2>Address: West Boring Canal Rd, near Rajapur Pul, North Anandpuri, Anandpuri, Patna, Bihar 800001</h2>
+                <h3>Availability: 24 Hrs.</h3>
+                <h3>Website: <a href="http://udayanhospital.com/">Click</a></h3>
+                <h3>Rating: 4&starf;</h3>
+                <h3>Location: <a href="https://www.google.com/maps?rlz=1C1VDKB_enIN1084IN1084&gs_lcrp=EgZjaHJvbWUqCQgAECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAuGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQozNTIxNjhqMGo3qAIIsAIB&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=Kdfamqt8fg0UMW-NJ43DMvKU&daddr=West+Boring+Canal+Rd,+near+Rajapur+Pul,+North+Anandpuri,+Anandpuri,+Patna,+Bihar+800001">Click here</a></h3>
+            </div>
+            <form action="process_appointment.php" method="post">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+        
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+        
+                <label for="date">Appointment Date:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+        
+                <label for="time">Appointment Time:</label><br>
+                <input type="time" id="time" name="time" required><br><br>
+        
+                <label for="doctor">Preferred Doctor:</label><br>
+                <input type="text" id="doctor" name="doctor"><br><br>
+        
+                <label for="message">Additional Information:</label><br>
+                <textarea id="message" name="message"></textarea><br><br>
+        
+                <input type="submit" value="Book Appointment">
+            </form>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
